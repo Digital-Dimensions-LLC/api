@@ -4,6 +4,7 @@ const { BID } = require('./functions/banID.js')
 const express = require('express')
 const bodyParser = require('body-parser');
 const responseTime = require('response-time')
+const moment = require('moment')
 const app = express()
 const port = 3000
 
@@ -423,7 +424,7 @@ return;
 
 // 404 Not Found
 app.get('*', (req, res, next) => {
-  res.status(404).render({status: 404, message: 'Not Found', details: { requested_url: req.path }})
+  res.status(404).send({status: 404, message: 'Not Found', details: { requested_url: req.path }})
 })
 // 500 Internal Server Error
 app.use(function(error, req, res, next) {
