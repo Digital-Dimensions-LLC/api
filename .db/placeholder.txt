@@ -1,0 +1,3 @@
+This is a github placeholder file.
+
+Remove this file after cloning the repository.
