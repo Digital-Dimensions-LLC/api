@@ -1,6 +1,6 @@
 module.exports = {
     async start() {
-const { BID } = require('./Scripts/banID.js')
+const { BID } = require('./functions/banID.js')
 const express = require('express')
 const bodyParser = require('body-parser');
 const responseTime = require('response-time')
@@ -434,3 +434,4 @@ app.use(function(error, req, res, next) {
 app.listen(port, () => {
     console.log('Server Online')
 })
+    }}
