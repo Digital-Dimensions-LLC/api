@@ -26,6 +26,10 @@ console.log(chalk.magenta('============>') + chalk.green(' 40%'))
 console.log(chalk.magenta('=============>') + chalk.green(' 50%'))
 console.log(chalk.magenta('==============>') + chalk.green(' 60%'))
 console.log(chalk.magenta('===============>') + chalk.green(' 70%'))
+let dir2 = './.db/'
+if (!fs.existsSync(dir2)) {
+    fs.mkdirSync(dir2, { recursive: true });
+}
 console.log(chalk.magenta('================>') + chalk.green(' 80%'))
 console.log(chalk.magenta('=================>') + chalk.green(' 90%'))
 console.log(chalk.magenta('==================>') + chalk.green(' 100%'))
