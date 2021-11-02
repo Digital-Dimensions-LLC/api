@@ -51,7 +51,7 @@ $ cd api
 $ npm install
 
 # Run Setup
-$ npm setup
+$ npm run setup
 
 # Run the app
 $ npm start
