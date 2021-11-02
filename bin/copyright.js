@@ -1,0 +1,5 @@
+var chalk = require('chalk')
+console.log(chalk.red('Copyright (c) 2021 Azrael Interactive LLC'))
+console.log(chalk.red('All Rights Reserved'))
+console.log(chalk.red('https://azrael.gg'))
+console.log(chalk.red('\n'))
