@@ -47,6 +47,9 @@ $ git clone https://github.com/amitmerchant1990/electron-markdownify
 # Go into the repository
 $ cd api
 
+# Install Dependencies
+$ npm install
+
 # Run Setup
 $ npm setup
 
