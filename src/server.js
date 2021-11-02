@@ -444,6 +444,27 @@ return;
 }
 })
 
+// Managing API Tokens
+app.post('/admin/token', async function(req, res, error) {
+if (req.body.action.toUpperCase() == 'CREATE') {
+let internalID = req.body.id.toString()
+if (!internalID) return res.status(400).send({ status: 400, message: 'Missing Internal ID' })
+let token = TOKEN(30)
+await authorizations.set(token, internalID)
+await authorizationsReadonly.set(internalID, token)
+res.status(200).send({ status: 200, message: 'Token Created', data: { internal_id: internalID, token: token} })
+}
+if (req.body.action.toUpperCase() == 'DELETE') {
+let internalID = req.body.id.toString()
+if (!internalID) return res.status(400).send({ status: 400, message: 'Missing Internal ID' })
+let token = await authorizationsReadonly.get(internalID)
+if (!internalID) return res.status(400).send({ status: 400, message: 'No Token Found' })
+await authorizations.delete(token)
+await authorizationsReadonly.delete(internalID)
+res.status(200).send({ status: 200, message: 'Token Deleted' })
+}
+if (req.body.action.toUpperCase() !== 'CREATE' && req.body.action.toUpperCase() !== 'DELETE') return res.status(400).send({ status: 400, message: 'Invalid Action (CREATE | DELETE)' })
+})
 // 404 Not Found
 app.get('*', (req, res, next) => {
   res.status(404).send({status: 404, message: 'Not Found', details: { requested_url: req.path }})
