@@ -5,8 +5,9 @@ const express = require('express')
 const bodyParser = require('body-parser');
 const responseTime = require('response-time')
 const moment = require('moment')
+const config = require('./config.json')
 const app = express()
-const port = 3000
+const port = config.port
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
