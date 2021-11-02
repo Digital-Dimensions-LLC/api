@@ -8,7 +8,7 @@ console.log('\n')
 console.log('Finishing Setup')
 let time = Date.now()
 let dir = './.azrael/logs/'
-if (!fs.existsSync(dir)){
+if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir, { recursive: true });
 }
 fs.writeFileSync('./.azrael/log.json', '{"id": "0"}', err => {
