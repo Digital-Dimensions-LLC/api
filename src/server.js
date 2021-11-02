@@ -447,7 +447,10 @@ module.exports = {
         })
 
         // Managing API Tokens
-        app.post('/admin/token', async function(req, res, error) {
+        app.post('/admin/token', async function(req, res) {
+            let Authorization = req.headers['authorization']
+            if (!Authorization) return res.status(401).send({ status: 401, message: 'Unauthorized'})
+            if (Authorization !== config.tokens.master) return res.status(403).send({ status: 403, message: 'Forbidden'})
             if (req.body.action.toUpperCase() == 'CREATE') {
                 let internalID = req.body.id.toString()
                 if (!internalID) return res.status(400).send({ status: 400, message: 'Missing Internal ID' })
