@@ -12,7 +12,7 @@
     "devDependencies": {},
     "scripts": {
       "setup": "node bin/setup.js",
-      "start": "node start.js"
+      "start": "node bin/start.js"
     },
     "repository": {
       "type": "git",
