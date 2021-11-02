@@ -42,7 +42,7 @@ To clone and run this application, you'll need a linux enviroment running Node.j
 
 ```
 # Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
+$ git clone https://github.com/Azrael-Interactive/api.git
 
 # Go into the repository
 $ cd api
