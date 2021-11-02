@@ -59,6 +59,26 @@ $ npm start
 
 The default port is 3000, if you need to change the port, you can change it in the `config.json` file.
 
+### Generating API Token(s)
+
+To generate API Token(s) for your API, an endpoint has already been created and you simply need to send a `POST` request to the endpoint. An example has been provided below using [node-fetch v2.6.5](https://www.npmjs.com/package/node-fetch/v/2.6.5)
+
+```javascript
+const body = { id: '1', action: 'CREATE' }; 
+// body.id - Internal Reference ID, Used to identify the moderator on ban data. Typeof STRING
+// body.action - Action to take, CREATE or DELETE a token. Typeof STRING
+
+fetch('https://yourapi.com/admin/token', {
+        method: 'POST',
+        body:    JSON.stringify(body),
+        headers: { 
+          'Authorization': 'YOUR_MASTER_TOKEN'
+          'Content-Type': 'application/json' 
+        },
+    })
+    .then(res => res.json())
+    .then(json => console.log(json));
+```
 ### Dependencies
 - [express](https://www.npmjs.com/package/express)
 - [body-parser](https://www.npmjs.com/package/body-parser) 
