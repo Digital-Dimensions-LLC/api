@@ -15,4 +15,5 @@ global.timestamp = new Keyv('sqlite://.db/banlist.sqlite', { table: 'banlist', n
         
 // Authentication Databases
 global.authorizations = new Keyv('sqlite://.db/authorizations.sqlite', { table: 'authentication', namespace: 'token'})
+global.authorizationsReadonly = new Keyv('sqlite://.db/authorizations.sqlite', { table: 'authentication', namespace: 'readonly'})
 }}
