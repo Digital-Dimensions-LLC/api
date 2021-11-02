@@ -1,6 +1,6 @@
 {
     "name": "azrael-api",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Open-Source Copy of Azrael Interactive LLC's API",
     "main": "bin/start.js",
     "directories": {
