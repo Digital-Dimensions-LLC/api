@@ -6,7 +6,7 @@ let logJSON = require('../.azrael/log.json')
 let lastID = logJSON.id
 let latestID = parseInt(logJSON.id) + 1
 
-fs.writeFileSync('./.azrael/' + 'log' + '.json', '{"id": "' + latestID + '"}', err => {
+fs.writeFileSync('./.azrael/log.json', '{"id": "' + latestID + '"}', err => {
     console.log(err);
 });
 fs.writeFileSync('./.azrael/logs/' + time + '.txt', '! Begin Logs', err => {

@@ -11,7 +11,7 @@ let dir = './.azrael/logs/'
 if (!fs.existsSync(dir)){
     fs.mkdirSync(dir, { recursive: true });
 }
-fs.writeFileSync('./.azrael/' + 'log' + '.json', '{"id": "' + '0' + '"}', err => {
+fs.writeFileSync('./.azrael/log.json', '{"id": "0"}', err => {
     console.log(err);
 });
 console.log('Setup Completed')
