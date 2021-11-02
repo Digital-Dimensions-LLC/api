@@ -51,7 +51,7 @@ if (req.params.id.length < 14) {
     res.status(400).send(obj)
     return;
 }
-let isBanned = await await bans.get(req.params.id)
+let isBanned = await bans.get(req.params.id)
 if (!isBanned) {
     let obj = {
     status: 200,
@@ -192,6 +192,8 @@ if (isBanned) {
 let MODID = await authorizations.get(Authorization)
 let TIME = moment().format('LLLL') + ' CST'
 
+ID = ID.toString();
+
 await bans.set(ID, true)
 await reason.set(ID, REASON)
 await proof.set(ID, PROOF)
@@ -290,6 +292,7 @@ if (!isBanned) {
     res.status(404).send(obj)
     return;
 }
+ID = ID.toString();
 if (TYPE == 'reason') {
     let REASON = 'Undefined'
     let RC = parseInt(VALUE)
@@ -386,6 +389,7 @@ if (!req.body.reason.length || req.body.reason.length < 1) {
     res.status(400).send(obj)
     return;
 }
+ID = ID.toString();
 let REASON = req.body.reason
 let MODID = await authorizations.get(Authorization)
 let isBanned = await await bans.get(req.params.id)
