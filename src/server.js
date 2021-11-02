@@ -13,6 +13,23 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
 app.use(responseTime())
 
+// Global Error Handling
+// ! DO NOT MODIFY ! Unless you know exactly what you are doing !
+process.on('unhandledRejection', error => {
+    const fs = require('fs')
+    let logJSON = require('../.azrael/log.json')
+    let lastID = parseInt(logJSON.id) + 1
+    fs.appendFileSync('./.azrael/logs/' + lastID + '_azrael_log.txt', '! Error: ' + error.stack + '\n\n', err => {
+    	console.log(err);
+    });
+	console.error(error);
+});
+// Override Headers for Security
+app.all('*', async function(req, res, next) {
+    res.set('x-powered-by', 'Github') // Change 'Github' to anything
+    next()
+})
+// Begin API
 app.get('/api/v1/bans/check/:id', async function(req, res) {
 if (req.params.id.length < 14) {
     let obj = {
