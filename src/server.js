@@ -5,6 +5,7 @@ module.exports = {
         const express = require('express')
         const bodyParser = require('body-parser');
         const responseTime = require('response-time')
+        const chalk = require('chalk')
         const moment = require('moment')
         const config = require('./config.json')
         const app = express()
@@ -481,7 +482,7 @@ module.exports = {
         })
         // Start Server and listen on port
         app.listen(port, () => {
-            console.log('Server Online')
+            console.log(chalk.blue('Server Online'))
         })
     }
 }

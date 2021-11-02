@@ -2,8 +2,9 @@ module.exports = {
     async start() {
 
         let Keyv = require('keyv')
+        let chalk = require('chalk')
 
-        console.log('Databases Ready')
+        console.log(chalk.blue('Databases Ready'))
 
         // Ban Database(s)
         global.bans = new Keyv('sqlite://.db/banlist.sqlite', { table: 'banlist', namespace: 'user' })
