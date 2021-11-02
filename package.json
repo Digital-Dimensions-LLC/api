@@ -4,6 +4,7 @@
     "description": "Open-Source Copy of Azrael Interactive LLC's API",
     "main": "bin/start.js",
     "directories": {
+      "src": "src",
       "test": "tests"
     },
     "dependencies": {
