@@ -80,7 +80,7 @@ fetch('https://yourapi.com/admin/token', {
     .then(json => console.log(json));
     
     // Expected Response
-    { status: 200, message: 'Token Created', data: { internal_id: '1', token: '2xqhbwLaSB0ZxSO47oxTKnxuOQV8rt' }}
+    { "status": "200", "message": "Token Created", "data": { "internal_id": "1", "token": "2xqhbwLaSB0ZxSO47oxTKnxuOQV8rt" }}
 ```
 ### Dependencies
 - [express](https://www.npmjs.com/package/express)
