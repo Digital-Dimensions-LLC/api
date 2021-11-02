@@ -58,11 +58,16 @@ The default port is 3000, if you need to change the port, you can change it in t
 
 ### Dependencies
 [express](https://www.npmjs.com/package/express)
-[body-parser](https://www.npmjs.com/package/body-parser)
-[moment](https://www.npmjs.com/package/moment)
-[response-time](https://www.npmjs.com/package/response-time)
-[keyv](https://www.npmjs.com/package/keyv)
-[@Keyv/sqlite](https://www.npmjs.com/package/@keyv/sqlite)
+
+[body-parser](https://www.npmjs.com/package/body-parser) 
+
+[moment](https://www.npmjs.com/package/moment) 
+
+[response-time](https://www.npmjs.com/package/response-time) 
+
+[keyv](https://www.npmjs.com/package/keyv) 
+
+[@Keyv/sqlite](https://www.npmjs.com/package/@keyv/sqlite) 
 
 ## Banlist Affiliate Program
 
