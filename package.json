@@ -1,0 +1,28 @@
+{
+    "name": "azrael-api",
+    "version": "1.0.0",
+    "description": "Open-Source Copy of Azrael Interactive LLC's API",
+    "main": "src/start.js",
+    "directories": {
+      "test": "tests"
+    },
+    "dependencies": {
+      "shelljs": "^0.8.4"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "setup": "node bin/setup.js",
+      "start": "node bin/start.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Azrael-Interactive/api.git"
+    },
+    "keywords": [
+      "azrael",
+      "api"
+    ],
+    "author": "Azrael Interactive LLC <justyn@azrael.gg>",
+    "license": "SEE LICENSE IN LICENSE.txt"
+  }
+  
