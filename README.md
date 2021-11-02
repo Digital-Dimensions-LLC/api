@@ -72,7 +72,7 @@ fetch('https://yourapi.com/admin/token', {
         method: 'POST',
         body:    JSON.stringify(body),
         headers: { 
-          'Authorization': 'YOUR_MASTER_TOKEN'
+          'Authorization': 'YOUR_MASTER_TOKEN' // Set/Update in config.json
           'Content-Type': 'application/json' 
         },
     })
