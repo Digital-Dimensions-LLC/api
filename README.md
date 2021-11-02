@@ -57,17 +57,12 @@ $ npm start
 The default port is 3000, if you need to change the port, you can change it in the `config.json` file.
 
 ### Dependencies
-[express](https://www.npmjs.com/package/express)
-
-[body-parser](https://www.npmjs.com/package/body-parser) 
-
-[moment](https://www.npmjs.com/package/moment) 
-
-[response-time](https://www.npmjs.com/package/response-time) 
-
-[keyv](https://www.npmjs.com/package/keyv) 
-
-[@Keyv/sqlite](https://www.npmjs.com/package/@keyv/sqlite) 
+- [express](https://www.npmjs.com/package/express)
+- [body-parser](https://www.npmjs.com/package/body-parser) 
+- [moment](https://www.npmjs.com/package/moment) 
+- [response-time](https://www.npmjs.com/package/response-time) 
+- [keyv](https://www.npmjs.com/package/keyv) 
+- [@Keyv/sqlite](https://www.npmjs.com/package/@keyv/sqlite) 
 
 ## Banlist Affiliate Program
 
@@ -81,14 +76,6 @@ We offer a banlist affiliate program for users and organizations that utilize ou
 * Hands on Support
   - We get it, things sometimes don't go as planned. That's why we offer hands on support directly from the experts who built the Azrael API.
 
-
-## Credits
-
-Azrael uses the following open source packages:
-
-- [Node.js](https://nodejs.org/)
-- [Azrael-Djs](https://www.npmjs.com/package/azrael-djs)
-- [Keyv](https://www.npmjs.com/package/keyv)
 
 ## Support
 
