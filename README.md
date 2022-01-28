@@ -14,8 +14,8 @@
     <img src="https://img.shields.io/discord/859549564536356864"
          alt="Discord">
   </a>
-  <a href="https://img.shields.io/maintenance/yes/2021">
-    <img src="https://img.shields.io/maintenance/yes/2021">
+  <a href="https://img.shields.io/maintenance/yes/2022">
+    <img src="https://img.shields.io/maintenance/yes/2022">
   </a>
 </p>
 
