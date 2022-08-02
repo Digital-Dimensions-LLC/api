@@ -22,7 +22,6 @@
 <p align="center">
   <a href="#key-features">Key Features</a> •
   <a href="#how-to-use">How To Use</a> •
-  <a href="#banlist-affiliate-program">Banlist Affiliate Program</a> •
   <a href="#credits">Credits</a> •
   <a href="#support">Support</a>
 </p>
@@ -89,18 +88,6 @@ fetch('https://yourapi.com/admin/token', {
 - [response-time](https://www.npmjs.com/package/response-time) 
 - [keyv](https://www.npmjs.com/package/keyv) 
 - [@Keyv/sqlite](https://www.npmjs.com/package/@keyv/sqlite) 
-
-## Banlist Affiliate Program
-
-We offer a banlist affiliate program for users and organizations that utilize our open-sourced API in a public instance. This program includes the following benefits:
-* Priority Support
-  - Get dedicated and priority support through from our Banlist Client Support team.
-* Affiliate Newsletter
-  - Stay in the know, find out about changes to the program before they are released.
-* Implementation into Azrael
-  - If your banlist meets our affiliate program guidelines, we may implement your banlist into the Azrael bot or other security services.
-* Hands on Support
-  - We get it, things sometimes don't go as planned. That's why we offer hands on support directly from the experts who built the Azrael API.
 
 
 ## Support
